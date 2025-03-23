@@ -11,6 +11,9 @@ body {
     max-width: 800px;
     padding: 20px;
     border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .centered-paragraph {
@@ -29,4 +32,35 @@ p {
 
 #link {
     color: white;
+}
+
+/* Social Icons Styling */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    color: white;
+    font-size: 24px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Different colors for different social platforms when hovered */
+.social-icon .fa-github:hover {
+    color: #6e5494;
+}
+
+.social-icon .fa-linkedin:hover {
+    color: #0077B5;
+}
+
+.social-icon .fa-twitter:hover {
+    color: #1DA1F2;
 }
