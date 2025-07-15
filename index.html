@@ -8,21 +8,122 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <div class="container">
-    <p class="centered-paragraph">Welcome to my page! My name is John Kim. I'm a 1st-Year CompE + Math major @ Georgia Tech. I am broadly interested in algorithms and machine learning.
-      I'm currently a teaching assistant for data structures and algorithms. This summer, I'll be interning at Amazon as an SDE in Belleveue, Washington.</p>
+  <div class="layout-container">
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+      <div class="profile-section">
+        <div class="profile-image">
+          <img src="profile_pic.JPG" alt="John Kim" class="profile-photo">
+        </div>
+        <h1 class="profile-name">John Kim</h1>
+        <p class="profile-title">CS + Math @ Georgia Tech</p>
+      </div>
+      
+      <div class="contact-section">
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Atlanta, GA</span>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:kimjohndev@gmail.com">Email</a>
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-linkedin"></i>
+          <a href="https://linkedin.com/in/johnkimgt/" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </aside>
 
-    <div class="social-icons">
-      <a href="https://github.com/johnkimo5" target="_blank" class="social-icon">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://linkedin.com/in/johnkimgt/" target="_blank" class="social-icon">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://twitter.com/im_john_k" target="_blank" class="social-icon">
-        <i class="fab fa-twitter"></i>
-      </a>
-    </div>
+    <!-- Main Content -->
+    <main class="main-content">
+      <section class="content-section">
+        <h2>About me</h2>
+        <p>Hi, I'm John! I'm a student at Georgia Tech studying Computer Science with a minor in Math. Currently seeking 2026 internships related to software engineering.</p>
+      </section>
+
+      <section class="content-section">
+        <h2>Experiences</h2>
+        <div class="timeline">
+          <div class="timeline-item" onclick="toggleTimelineContent(this)">
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-header-left">
+                  <img src="amazon-logo.png" alt="Amazon Logo" class="timeline-logo" />
+                  <h3>Software Development Engineer Intern</h3>
+                </div>
+                <div class="timeline-right">
+                  <span class="timeline-date">Summer 2025</span>
+                  <span class="timeline-arrow"><i class="fas fa-chevron-down"></i></span>
+                </div>
+              </div>
+              <div class="timeline-details collapsible">
+                <p>Worked on scalable backend systems and contributed to team projects in Bellevue, WA.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline-item" onclick="toggleTimelineContent(this)">
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-header-left">
+                  <img src="college_of_computing_at_georgia_tech_logo.jpeg" alt="Georgia Tech Logo" class="timeline-logo" />
+                  <h3>Teaching Assistant, Data Structures & Algorithms</h3>
+                </div>
+                <div class="timeline-right">
+                  <span class="timeline-date">2025 - Present</span>
+                  <span class="timeline-arrow"><i class="fas fa-chevron-down"></i></span>
+                </div>
+              </div>
+              <div class="timeline-details collapsible">
+                <p>Assisted students, graded assignments, and led recitation sessions at Georgia Tech.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline-item" onclick="toggleTimelineContent(this)">
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div class="timeline-header-left">
+                  <img src="SJ_Logo.png" alt="Project Logo" class="timeline-logo" />
+                  <h3>Design for Testability Member</h3>
+                </div>
+                <div class="timeline-right">
+                  <span class="timeline-date">2024 - 2024</span>
+                  <span class="timeline-arrow"><i class="fas fa-chevron-down"></i></span>
+                </div>
+              </div>
+              <div class="timeline-details collapsible">
+                <p>CPU Debugging & Design</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <script>
+          function toggleTimelineContent(item) {
+            const details = item.querySelector('.timeline-details');
+            const arrow = item.querySelector('.timeline-arrow i');
+            if (details.classList.contains('active')) {
+              details.classList.remove('active');
+              arrow.classList.remove('rotated');
+            } else {
+              details.classList.add('active');
+              arrow.classList.add('rotated');
+            }
+          }
+        </script>
+      </section>
+
+      <section class="content-section">
+        <h2>Education</h2>
+        <div class="education-item">
+          <strong>B.S in Computer Science, Minor in Math</strong>, <em>Graduation: May 2027</em>
+          <br>
+          <span class="institution">Georgia Institute of Technology, Atlanta, GA</span>
+        </div>
+      </section>
+    </main>
   </div>
 </body>
 </html>
