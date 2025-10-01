@@ -1,129 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>John's Website</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Kim - CS @ Georgia Tech</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="layout-container">
-    <!-- Left Sidebar -->
-    <aside class="sidebar">
-      <div class="profile-section">
-        <div class="profile-image">
-          <img src="profile_pic.JPG" alt="John Kim" class="profile-photo">
+    <nav>
+        <ul>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#writing">Writing</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+    <section class="hero">
+        <div class="container">
+            <h1>John Kim</h1>
+            <p class="major">Computer Science at Georgia Tech</p>
+            <div class="links">
+                <a href="mailto:kimjohndev@gmail.com">Email</a>
+                <a href="https://github.com/seungjinjkim" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/seungjinkim05/" target="_blank">LinkedIn</a>
+                <a href="#" target="_blank">Resume</a>
+            </div>
         </div>
-        <h1 class="profile-name">John Kim</h1>
-        <p class="profile-title">CS + Math @ Georgia Tech</p>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+          <h2>Experience</h2>
+          <div class="experience-list">
+              <div class="experience-item">
+                  <div class="experience-meta">
+                      <div>Databricks</div>
+                      <div class="date">May — Aug 2026</div>
+                      <img src="databricks-logo.jpg" alt="Databricks logo" class="company-logo">
+                  </div>
+                  <div class="experience-content">
+                      <h3>Software Engineer Intern</h3>
+                      <div class="company">Mountain View, CA</div>
+                      <p>Incoming Software Engineering Intern for Summer 2026.</p>
+                  </div>
+              </div>
+
+              <div class="experience-item">
+                  <div class="experience-meta">
+                      <div>Amazon</div>
+                      <div class="date">May — Aug 2025</div>
+                      <img src="good-amazon-logo.png" alt="Amazon logo" class="company-logo amazon-logo">
+                  </div>
+                  <div class="experience-content">
+                      <h3>Software Development Engineer Intern</h3>
+                      <div class="company">Bellevue, WA</div>
+                      <p>Accomplished hydration and enrichment of over $50,000,000 of digital transaction data per year by developing a plugin utilizing AWS Lambda. Fulfilled 99.99% accuracy on tax linkage for Amazon's digital order records (12 transactions per second) by engineering robust logic pipelines with SQL, AWS Athena, and AWS Glue. Delivered enhanced customer-facing tax insights for 10,000,000+ transactions by deploying endpoints and redesigning front-end features with React.</p>
+                  </div>
+              </div>
+
+              <div class="experience-item">
+                  <div class="experience-meta">
+                      <div>Georgia Tech College of Computing</div>
+                      <div class="date">Jan 2025 — Present</div>
+                      <img src="college_of_computing_at_georgia_tech_logo.jpeg" alt="Georgia Tech logo" class="company-logo">
+                  </div>
+                  <div class="experience-content">
+                      <h3>Data Structures & Algorithms Teaching Assistant</h3>
+                      <div class="company">Atlanta, GA</div>
+                      <p>Conduct weekly office hours open to 1100+ students per semester, focused on 1-to-1 sessions for course content. Teach weekly recitations for 20+ students on topics ranging from Binary Search Trees to Graph Algorithms. Build and maintain csvistool.com, a data structures and algorithms visualization tool with 1000+ users daily.</p>
+                  </div>
+              </div>
+
+              <div class="experience-item">
+                  <div class="experience-meta">
+                      <div>Silicon Jackets</div>
+                      <div class="date">Aug — Dec 2024</div>
+                      <img src="SJ_Logo.png" alt="Silicon Jackets logo" class="company-logo">
+                  </div>
+                  <div class="experience-content">
+                      <h3>Design for Testability Team Member</h3>
+                      <div class="company">Atlanta, GA</div>
+                      <p>Actively contributing to debugging key RISC-V CPU modules, with a focus on signal analysis and clock behavior. Enhanced system reliability by identifying and resolving clock-related issues in various components and enforcing better design principles for easier debugging in the future. Collaborated on full-chip integration tasks for the club's inaugural $40,000 RISC-V CPU tape-out.</p>
+                  </div>
+              </div>
+          </div>
       </div>
-      
-      <div class="contact-section">
-        <div class="contact-item">
-          <i class="fas fa-map-marker-alt"></i>
-          <span>Atlanta, GA</span>
-        </div>
-        <div class="contact-item">
-          <i class="fas fa-envelope"></i>
-          <a href="mailto:kimjohndev@gmail.com">Email</a>
-        </div>
-        <div class="contact-item">
-          <i class="fab fa-linkedin"></i>
-          <a href="https://linkedin.com/in/johnkimgt/" target="_blank">LinkedIn</a>
-        </div>
-      </div>
-    </aside>
+    </section>
 
-    <!-- Main Content -->
-    <main class="main-content">
-      <section class="content-section">
-        <h2>About me</h2>
-        <p>Hi, I'm John! I'm a student at Georgia Tech studying Computer Science with a minor in Math. Currently seeking 2026 internships related to software engineering.</p>
-      </section>
+    <section id="work">
+        <div class="container">
+            <h2>Selected Work</h2>
+            <div class="project-list">
+                <div class="project-item">
+                    <div class="project-meta">
+                        <div>Jan 2025 — Present</div>
+                        <div class="tech">JavaScript, React</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Data Structures and Algorithms Visualization Tool</h3>
+                        <p>Expand and maintain a data structures and algorithms visualization tool using JavaScript and React.js. Used by nearly every student in CS1332 and deployed on csvistool.com with more than 100,000 impressions.</p>
+                        <div class="project-links">
+                            <a href="http://csvistool.com" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
 
-      <section class="content-section">
-        <h2>Experiences</h2>
-        <div class="timeline">
-          <div class="timeline-item" onclick="toggleTimelineContent(this)">
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <div class="timeline-header-left">
-                  <img src="amazon-logo.png" alt="Amazon Logo" class="timeline-logo" />
-                  <h3>Software Development Engineer Intern</h3>
+                <div class="project-item">
+                    <div class="project-meta">
+                        <div>October 2024</div>
+                        <div class="tech">React, Flask, Gemini API, RunwayML API</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Boovie</h3>
+                        <p>Developed a full-stack web application that leveraged AI tools like Gemini, Google's Imagen, and RunwayML that converts book PDFs into engaging, dynamic 30-second movie trailers. Collaborated with others to create a system that extracts, summarizes, and transforms book content into trailers, utilizing Python, Flask, and React for processing and UI. Presented a detailed report about the application's architecture and pipeline to Google's Lead Product Manager and AI Developer Relations Lead, Paige Bailey.</p>
+                        <div class="project-links">
+                            <a href="#">View Demo</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="timeline-right">
-                  <span class="timeline-date">Summer 2025</span>
-                  <span class="timeline-arrow"><i class="fas fa-chevron-down"></i></span>
-                </div>
-              </div>
-              <div class="timeline-details collapsible">
-                <p>Worked on scalable backend systems and contributed to team projects in Bellevue, WA.</p>
-              </div>
             </div>
-          </div>
-          
-          <div class="timeline-item" onclick="toggleTimelineContent(this)">
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <div class="timeline-header-left">
-                  <img src="college_of_computing_at_georgia_tech_logo.jpeg" alt="Georgia Tech Logo" class="timeline-logo" />
-                  <h3>Teaching Assistant, Data Structures & Algorithms</h3>
-                </div>
-                <div class="timeline-right">
-                  <span class="timeline-date">2025 - Present</span>
-                  <span class="timeline-arrow"><i class="fas fa-chevron-down"></i></span>
-                </div>
-              </div>
-              <div class="timeline-details collapsible">
-                <p>Assisted students, graded assignments, and led recitation sessions at Georgia Tech.</p>
-              </div>
-            </div>
-          </div>
-          
-          <div class="timeline-item" onclick="toggleTimelineContent(this)">
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <div class="timeline-header-left">
-                  <img src="SJ_Logo.png" alt="Project Logo" class="timeline-logo" />
-                  <h3>Design for Testability Member</h3>
-                </div>
-                <div class="timeline-right">
-                  <span class="timeline-date">2024 - 2024</span>
-                  <span class="timeline-arrow"><i class="fas fa-chevron-down"></i></span>
-                </div>
-              </div>
-              <div class="timeline-details collapsible">
-                <p>CPU Debugging & Design</p>
-              </div>
-            </div>
-          </div>
         </div>
-        
-        <script>
-          function toggleTimelineContent(item) {
-            const details = item.querySelector('.timeline-details');
-            const arrow = item.querySelector('.timeline-arrow i');
-            if (details.classList.contains('active')) {
-              details.classList.remove('active');
-              arrow.classList.remove('rotated');
-            } else {
-              details.classList.add('active');
-              arrow.classList.add('rotated');
-            }
-          }
-        </script>
-      </section>
+    </section>
 
-      <section class="content-section">
-        <h2>Education</h2>
-        <div class="education-item">
-          <strong>B.S in Computer Science, Minor in Math</strong>, <em>Graduation: May 2027</em>
-          <br>
-          <span class="institution">Georgia Institute of Technology, Atlanta, GA</span>
+    <section id="writing">
+        <div class="container">
+            <h2>Writing</h2>
+            <div class="blog-list">
+                <div class="blog-item">
+                    <div class="blog-date">Sep 30, 2025</div>
+                    <div class="blog-content">
+                        <h3>Building this website.</h3>
+                        <p>building this personal website and it'll stay a work in progress.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </section>
-    </main>
-  </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>© 2025 John Kim</div>
+                <div class="footer-links">
+                    <a href="https://github.com/seungjinjkim" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/seungjinkim05/" target="_blank">LinkedIn</a>
+                    <a href="mailto:kimjohndev@gmail.com">Email</a>
+                    <a href="https://x.com/im_john_k" target="_blank">X</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script src="js/main.js"></script>
 </body>
 </html>
