@@ -3,156 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Kim - CS @ Georgia Tech</title>
+    <title>John Kim</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#writing">Writing</a></li>
-        </ul>
-    </nav>
-
-    <div class="main-content">
-    <section class="hero">
-        <div class="container">
+    <main>
+        <header>
             <h1>John Kim</h1>
-            <p class="major">Computer Science at Georgia Tech</p>
-            <div class="links">
+            <p class="bio">Computer Science at Georgia Tech. Building autonomous robots and scalable software systems.</p>
+            <nav>
+                <a href="#work">Work</a>
+                <a href="#writing">Writing</a>
+                <a href="#about">About</a>
                 <a href="mailto:kimjohndev@gmail.com">Email</a>
-                <a href="https://github.com/seungjinjkim" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/seungjinkim05/" target="_blank">LinkedIn</a>
-                <a href="#" target="_blank">Resume</a>
+            </nav>
+        </header>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>I'm a software engineer passionate about distributed systems, machine learning, and robotics. Currently studying Computer Science at Georgia Tech.</p>
+            <p>I've worked on everything from autonomous robot navigation to processing millions of financial transactions at scale. I enjoy building tools that help others learn and solving complex engineering challenges.</p>
+        </section>
+
+        <section id="work">
+            <h2>Work Experience</h2>
+            <div class="experience-list">
+                
+                <article class="job">
+                    <div class="job-header">
+                        <h3>RoboJackets</h3>
+                        <span class="date">Sep 2025 — Present</span>
+                    </div>
+                    <p class="role">Software Engineer</p>
+                    <p class="description">Working on autonomous robotics systems and developing software solutions for intelligent robot navigation and control.</p>
+                </article>
+
+                <article class="job">
+                    <div class="job-header">
+                        <h3>Amazon</h3>
+                        <span class="date">May — Aug 2025</span>
+                    </div>
+                    <p class="role">Software Development Engineer Intern</p>
+                    <p class="description">Accomplished hydration and enrichment of over $50M of digital transaction data per year using AWS Lambda. Achieved 99.99% accuracy on tax linkage for 12 transactions/second using SQL, Athena, and Glue. Enhanced tax insights for 10M+ transactions with React.</p>
+                </article>
+
+                <article class="job">
+                    <div class="job-header">
+                        <h3>Georgia Tech College of Computing</h3>
+                        <span class="date">Jan 2025 — Present</span>
+                    </div>
+                    <p class="role">Teaching Assistant (CS 1332)</p>
+                    <p class="description">Teaching Data Structures & Algorithms. Supporting 1100+ students, holding office hours, and maintaining the visualization tool <a href="http://csvistool.com">csvistool.com</a> (1000+ daily users).</p>
+                </article>
+
+                <article class="job">
+                    <div class="job-header">
+                        <h3>Silicon Jackets</h3>
+                        <span class="date">Aug — Dec 2024</span>
+                    </div>
+                    <p class="role">Design for Testability Team Member</p>
+                    <p class="description">Contributed to debugging RISC-V CPU modules and enhancing system reliability for the club's inaugural $40,000 CPU tape-out.</p>
+                </article>
+
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="experience">
-      <div class="container">
-          <h2>Experience</h2>
-          <div class="experience-list">
-              <div class="experience-item">
-                  <div class="experience-meta">
-                      <div>RoboJackets</div>
-                      <div class="date">Sep 2025 — Present</div>
-                      <img src="georgia_tech_robojackets_logo.jpeg" alt="RoboJackets logo" class="company-logo">
-                  </div>
-                  <div class="experience-content">
-                      <h3>Software Engineer</h3>
-                      <div class="company">Atlanta, GA</div>
-                      <p>Working on autonomous robots.</p>
-                  </div>
-              </div>
-
-              <div class="experience-item">
-                  <div class="experience-meta">
-                      <div>Amazon</div>
-                      <div class="date">May — Aug 2025</div>
-                      <img src="good-amazon-logo.png" alt="Amazon logo" class="company-logo amazon-logo">
-                  </div>
-                  <div class="experience-content">
-                      <h3>Software Development Engineer Intern</h3>
-                      <div class="company">Bellevue, WA</div>
-                      <p>Accomplished hydration and enrichment of over $50,000,000 of digital transaction data per year by developing a plugin utilizing AWS Lambda. Fulfilled 99.99% accuracy on tax linkage for Amazon's digital order records (12 transactions per second) by engineering robust logic pipelines with SQL, AWS Athena, and AWS Glue. Delivered enhanced customer-facing tax insights for 10,000,000+ transactions by deploying endpoints and redesigning front-end features with React.</p>
-                  </div>
-              </div>
-
-              <div class="experience-item">
-                  <div class="experience-meta">
-                      <div>Georgia Tech College of Computing</div>
-                      <div class="date">Jan 2025 — Present</div>
-                      <img src="college_of_computing_at_georgia_tech_logo.jpeg" alt="Georgia Tech logo" class="company-logo">
-                  </div>
-                  <div class="experience-content">
-                      <h3>Data Structures & Algorithms Teaching Assistant</h3>
-                      <div class="company">Atlanta, GA</div>
-                      <p>Conduct weekly office hours open to 1100+ students per semester, focused on 1-to-1 sessions for course content. Teach weekly recitations for 20+ students on topics ranging from Binary Search Trees to Graph Algorithms. Build and maintain csvistool.com, a data structures and algorithms visualization tool with 1000+ users daily.</p>
-                  </div>
-              </div>
-
-              <div class="experience-item">
-                  <div class="experience-meta">
-                      <div>Silicon Jackets</div>
-                      <div class="date">Aug — Dec 2024</div>
-                      <img src="SJ_Logo.png" alt="Silicon Jackets logo" class="company-logo">
-                  </div>
-                  <div class="experience-content">
-                      <h3>Design for Testability Team Member</h3>
-                      <div class="company">Atlanta, GA</div>
-                      <p>Actively contributing to debugging key RISC-V CPU modules, with a focus on signal analysis and clock behavior. Enhanced system reliability by identifying and resolving clock-related issues in various components and enforcing better design principles for easier debugging in the future. Collaborated on full-chip integration tasks for the club's inaugural $40,000 RISC-V CPU tape-out.</p>
-                  </div>
-              </div>
-          </div>
-      </div>
-    </section>
-
-    <section id="work">
-        <div class="container">
-            <h2>Selected Work</h2>
+        <section id="projects">
+            <h2>Projects</h2>
             <div class="project-list">
-                <div class="project-item">
-                    <div class="project-meta">
-                        <div>Jan 2025 — Present</div>
-                        <div class="tech">JavaScript, React</div>
+                <article class="project">
+                    <div class="project-header">
+                        <h3><a href="http://csvistool.com">Data Structures Visualization Tool</a></h3>
+                        <span class="date">Jan 2025 — Present</span>
                     </div>
-                    <div class="project-content">
-                        <h3>Data Structures and Algorithms Visualization Tool</h3>
-                        <p>Expand and maintain a data structures and algorithms visualization tool using JavaScript and React.js. Used by nearly every student in CS1332 and deployed on csvistool.com with more than 100,000 impressions.</p>
-                        <div class="project-links">
-                            <a href="http://csvistool.com" target="_blank">View Project</a>
-                        </div>
-                    </div>
-                </div>
+                    <p class="description">Interactive tool for visualizing complex algorithms. Used by nearly every CS1332 student at Georgia Tech.</p>
+                </article>
 
-                <div class="project-item">
-                    <div class="project-meta">
-                        <div>October 2024</div>
-                        <div class="tech">React, Flask, Gemini API, RunwayML API</div>
-                    </div>
-                    <div class="project-content">
+                <article class="project">
+                    <div class="project-header">
                         <h3>Boovie</h3>
-                        <p>Developed a full-stack web application that leveraged AI tools like Gemini, Google's Imagen, and RunwayML that converts book PDFs into engaging, dynamic 30-second movie trailers. Collaborated with others to create a system that extracts, summarizes, and transforms book content into trailers, utilizing Python, Flask, and React for processing and UI. Presented a detailed report about the application's architecture and pipeline to Google's Lead Product Manager and AI Developer Relations Lead, Paige Bailey.</p>
-                        <div class="project-links">
-                            <a href="#">View Demo</a>
-                        </div>
+                        <span class="date">Oct 2024</span>
                     </div>
-                </div>
+                    <p class="description">Full-stack AI app converting book PDFs into 30-second movie trailers using Gemini, Imagen, and RunwayML. Presented to Google's AI leadership.</p>
+                </article>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="writing">
-        <div class="container">
+        <section id="writing">
             <h2>Writing</h2>
-            <div class="blog-list">
-                <div class="blog-item">
-                    <div class="blog-date">Sep 30, 2025</div>
-                    <div class="blog-content">
-                        <h3>Building this website.</h3>
-                        <p>building this personal website and it'll stay a work in progress.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+            <ul class="writing-list">
+                <li>
+                    <span class="date">Sep 30, 2025</span>
+                    <a href="#">Building this website</a>
+                </li>
+                <!-- Add more writing items here -->
+            </ul>
+        </section>
 
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div>© 2025 John Kim</div>
-                <div class="footer-links">
-                    <a href="https://github.com/seungjinjkim" target="_blank">GitHub</a>
-                    <a href="https://www.linkedin.com/in/seungjinkim05/" target="_blank">LinkedIn</a>
-                    <a href="mailto:kimjohndev@gmail.com">Email</a>
-                    <a href="https://x.com/im_john_k" target="_blank">X</a>
-                </div>
+        <footer>
+            <div class="social-links">
+                <a href="https://github.com/seungjinjkim">GitHub</a>
+                <a href="https://www.linkedin.com/in/seungjinkim05/">LinkedIn</a>
+                <a href="https://x.com/im_john_k">X</a>
             </div>
-        </div>
-    </footer>
-    </div>
-    <script src="js/main.js"></script>
+            <p class="copyright">&copy; 2025 John Kim</p>
+        </footer>
+    </main>
 </body>
 </html>
