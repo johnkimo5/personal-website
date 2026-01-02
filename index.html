@@ -7,126 +7,95 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <main>
+    <div class="container">
         <header>
-            <h1>John Kim</h1>
-            <p class="bio">Welcome!</p>
             <nav>
-                <a href="#work">Work</a>
-                <a href="#writing">Writing</a>
-                <a href="#about">About</a>
-                <a href="mailto:kimjohndev@gmail.com">Email</a>
+                <a href="#" class="nav-link">Home</a>
+                <a href="#work" class="nav-link">Work & Projects</a>
+                <a href="#writing" class="nav-link">Writing</a>
+                <a href="mailto:kimjohndev@gmail.com" class="nav-link">Contact</a>
             </nav>
         </header>
 
-        <section id="about">
-            <h2>About</h2>
-            <p>I'm a student at Georgia Tech studying Computer Science. My current interests are in distributed systems and infrastructure. I've worked on processing millions of financial transactions at scale at Amazon and I enjoy building tools.</p>
-        </section>
+        <main>
+            <section class="intro">
+                <h1>John Kim</h1>
+                <p>Computer Science student at Georgia Tech interested in distributed systems and infrastructure.</p>
+            </section>
 
-        <section id="work">
-            <h2>Work Experience</h2>
-            <div class="experience-list">
+            <section id="work" class="work">
+                <h2>Work & Projects</h2>
                 
-                <article class="job">
-                    <div class="job-header">
-                        <h3><a href="https://www.databricks.com" target="_blank">Databricks</a></h3>
-                        <span class="date">Summer 2026</span>
-                    </div>
-                    <p class="role">Software Engineer Intern</p>
-                    <p class="description">Incoming Software Engineer Intern.</p>
-                </article>
+                <div class="experience">
+                    <h3>Current</h3>
+                    <ul>
+                        <li>
+                            <strong>Teaching Assistant, Georgia Tech (CS 1332)</strong> — Jan 2025–Present<br>
+                            Teaching Data Structures & Algorithms. Supporting 1100+ students, holding office hours, and maintaining the visualization tool <a href="http://csvistool.com" target="_blank">csvistool.com</a> (1000+ daily users).
+                        </li>
+                        <li>
+                            <strong>Software Engineer, RoboJackets</strong> — Sep 2025–Present<br>
+                            Working on autonomous robotics systems and developing software solutions for intelligent robot navigation and control.
+                        </li>
+                    </ul>
+                </div>
 
-                <article class="job">
-                    <div class="job-header">
-                        <h3><a href="https://robojackets.org" target="_blank">RoboJackets</a></h3>
-                        <span class="date">Sep 2025 — Present</span>
-                    </div>
-                    <p class="role">Software Engineer</p>
-                    <p class="description">Working on autonomous robotics systems and developing software solutions for intelligent robot navigation and control.</p>
-                </article>
+                <div class="experience">
+                    <h3>Upcoming</h3>
+                    <ul>
+                        <li>
+                            <strong>Software Engineer Intern, Databricks</strong> — Summer 2026<br>
+                            Incoming Software Engineer Intern focused on data platform engineering.
+                        </li>
+                    </ul>
+                </div>
 
-                <article class="job">
-                    <div class="job-header">
-                        <h3><a href="https://www.amazon.jobs" target="_blank">Amazon</a></h3>
-                        <span class="date">May — Aug 2025</span>
-                    </div>
-                    <p class="role">Software Development Engineer Intern</p>
-                    <p class="description">Accomplished hydration and enrichment of over $50M of digital transaction data per year using AWS Lambda. Achieved 99.99% accuracy on tax linkage for 12 transactions/second using SQL, Athena, and Glue. Enhanced tax insights for 10M+ transactions with React.</p>
-                </article>
+                <div class="experience">
+                    <h3>Previous</h3>
+                    <ul>
+                        <li>
+                            <strong>Software Development Engineer Intern, Amazon</strong> — May–Aug 2025<br>
+                            Accomplished hydration and enrichment of over $50M of digital transaction data per year using AWS Lambda. Achieved 99.99% accuracy on tax linkage for 12 transactions/second using SQL, Athena, and Glue. Enhanced tax insights for 10M+ transactions with React.
+                        </li>
+                        <li>
+                            <strong>Design for Testability Team Member, Silicon Jackets</strong> — Aug–Dec 2024<br>
+                            Contributed to debugging RISC-V CPU modules and enhancing system reliability for the club's inaugural $40,000 CPU tape-out.
+                        </li>
+                    </ul>
+                </div>
 
-                <article class="job">
-                    <div class="job-header">
-                        <h3><a href="https://www.cc.gatech.edu" target="_blank">Georgia Tech College of Computing</a></h3>
-                        <span class="date">Jan 2025 — Present</span>
-                    </div>
-                    <p class="role">Teaching Assistant (CS 1332)</p>
-                    <p class="description">Teaching Data Structures & Algorithms. Supporting 1100+ students, holding office hours, and maintaining the visualization tool <a href="http://csvistool.com">csvistool.com</a> (1000+ daily users).</p>
-                </article>
+                <div class="projects">
+                    <h3>Projects</h3>
+                    <ul>
+                        <li>
+                            <strong><a href="http://csvistool.com" target="_blank">Data Structures Visualization Tool</a></strong> — Jan 2025–Present<br>
+                            Interactive tool for visualizing complex algorithms. Used by nearly every CS1332 student at Georgia Tech. Built with JavaScript, HTML5 Canvas, and CSS3.
+                        </li>
+                        <li>
+                            <strong>Boovie</strong> — Oct 2024<br>
+                            Full-stack AI app converting book PDFs into 30-second movie trailers using Gemini, Imagen, and RunwayML. Presented to Google's AI leadership. Built with Python, React, and Google AI APIs.
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
-                <article class="job">
-                    <div class="job-header">
-                        <h3><a href="https://www.linkedin.com/company/silicon-jackets" target="_blank">Silicon Jackets</a></h3>
-                        <span class="date">Aug — Dec 2024</span>
-                    </div>
-                    <p class="role">Design for Testability Team Member</p>
-                    <p class="description">Contributed to debugging RISC-V CPU modules and enhancing system reliability for the club's inaugural $40,000 CPU tape-out.</p>
-                </article>
-
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project-list">
-                <article class="project">
-                    <div class="project-header">
-                        <h3><a href="http://csvistool.com">Data Structures Visualization Tool</a></h3>
-                        <span class="date">Jan 2025 — Present</span>
-                    </div>
-                    <p class="description">Interactive tool for visualizing complex algorithms. Used by nearly every CS1332 student at Georgia Tech.</p>
-                </article>
-
-                <article class="project">
-                    <div class="project-header">
-                        <h3>Boovie</h3>
-                        <span class="date">Oct 2024</span>
-                    </div>
-                    <p class="description">Full-stack AI app converting book PDFs into 30-second movie trailers using Gemini, Imagen, and RunwayML. Presented to Google's AI leadership.</p>
-                </article>
-            </div>
-        </section>
-
-        <section id="writing">
-            <h2>Writing</h2>
-            <ul class="writing-list">
-                <!-- 
-                    TEMPLATE FOR NEW ENTRY:
-                    <li>
-                        <span class="date">Month Day, Year</span>
-                        <a href="LINK_TO_POST">Title of Article</a>
-                    </li> 
-                -->
-
-                <li>
-                    <span class="date">December 15, 2025</span>
-                    <a href="writing/Lessons-From-Interning-At-Amazon.html">Lessons while interning @ Amazon</a>
-                </li>
-                <li>
-                    <span class="date">December 31, 2025</span>
-                    <a href="writing/2026-Goals.html">2026 Goals</a>
-                </li>
-            </ul>
-        </section>
+            <section id="writing" class="writing">
+                <h2>Writing</h2>
+                <ul>
+                    <li><a href="writing/2026-Goals.html">2026 Goals</a> — Dec 31, 2025</li>
+                    <li><a href="writing/Lessons-From-Interning-At-Amazon.html">Lessons while interning @ Amazon</a> — Dec 15, 2025</li>
+                </ul>
+            </section>
+        </main>
 
         <footer>
-            <div class="social-links">
-                <a href="https://github.com/seungjinjkim">GitHub</a>
-                <a href="https://www.linkedin.com/in/seungjinkim05/">LinkedIn</a>
-                <a href="https://x.com/im_john_k">X</a>
-            </div>
-            <p class="copyright">&copy; 2026 John Kim</p>
+            <p>
+                <a href="mailto:kimjohndev@gmail.com">Email</a> •
+                <a href="https://github.com/seungjinjkim" target="_blank">GitHub</a> •
+                <a href="https://www.linkedin.com/in/seungjinkim05/" target="_blank">LinkedIn</a> •
+                <a href="https://x.com/im_john_k" target="_blank">Twitter</a>
+            </p>
         </footer>
-    </main>
+    </div>
 </body>
 </html>

@@ -1,13 +1,4 @@
-:root {
-    --bg: #ffffff;
-    --text: #333333;
-    --text-light: #666666;
-    --accent: #000000;
-    --link: #0066cc;
-    --spacing: 2rem;
-    --max-width: 680px;
-}
-
+/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
@@ -16,199 +7,202 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    background-color: var(--bg);
-    color: var(--text);
-    line-height: 1.6;
-    font-size: 16px;
-    padding: 2rem 1rem;
+    line-height: 1.7;
+    color: #000;
+    background-color: #fff;
+    font-size: 17px;
 }
 
-main {
-    max-width: var(--max-width);
+.container {
+    max-width: 750px;
     margin: 0 auto;
+    padding: 50px 25px;
 }
 
-/* Header */
+/* Navigation - Serif font like the reference */
 header {
-    margin-bottom: 4rem;
-}
-
-h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    letter-spacing: -0.03em;
-    margin-bottom: 0.5rem;
-    color: var(--accent);
-}
-
-.bio {
-    font-size: 1.2rem;
-    color: var(--text-light);
-    margin-bottom: 1.5rem;
-    max-width: 500px;
+    margin-bottom: 50px;
 }
 
 nav {
     display: flex;
-    gap: 1.5rem;
-    font-size: 0.95rem;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
-nav a {
-    color: var(--text);
+.nav-link {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #000;
     text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: border-color 0.2s ease;
+    font-size: 18px;
 }
 
-nav a:hover {
-    border-bottom-color: var(--text);
+.nav-link:hover {
+    text-decoration: underline;
 }
 
-/* Sections */
-section {
-    margin-bottom: 4rem;
+/* Typography */
+h1 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.3;
+    color: #000;
 }
 
 h2 {
     font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--text-light);
-    margin-bottom: 2rem;
-    font-weight: 600;
-}
-
-/* Experience & Projects */
-.job, .project {
-    margin-bottom: 2.5rem;
-}
-
-.job-header, .project-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; /* Changed from baseline to center for better logo alignment */
-    margin-bottom: 0.5rem;
-}
-
-.company-info {
+    font-weight: 700;
+    margin: 50px 0 15px 0;
+    line-height: 1.3;
+    color: #000;
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 15px;
 }
 
-.company-logo {
-    width: 24px;
-    height: 24px;
-    object-fit: contain;
-    border-radius: 4px;
+/* Horizontal line after h2 */
+h2::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #ddd;
 }
 
 h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 600;
-    color: var(--text);
-    line-height: 1.2;
+    margin: 30px 0 15px 0;
+    color: #000;
 }
 
-h3 a {
-    color: inherit;
+p {
+    margin-bottom: 18px;
+    color: #000;
+}
+
+/* Intro section */
+.intro {
+    margin-bottom: 40px;
+}
+
+.intro p {
+    font-size: 17px;
+    color: #000;
+}
+
+/* Work section */
+.experience, .projects {
+    margin-bottom: 30px;
+}
+
+/* Lists - Standard bullet points like the reference */
+ul {
+    list-style: disc;
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 18px;
+    line-height: 1.7;
+    padding-left: 5px;
+}
+
+li::marker {
+    color: #000;
+}
+
+strong {
+    font-weight: 600;
+    color: #000;
+}
+
+/* Links - Black like the reference */
+a {
+    color: #000;
+    text-decoration: underline;
+}
+
+a:hover {
     text-decoration: none;
 }
 
-h3 a:hover {
-    text-decoration: underline;
-}
-
-.date {
-    font-size: 0.85rem;
-    color: var(--text-light);
-    font-variant-numeric: tabular-nums;
-    white-space: nowrap; /* Prevent date wrapping */
-}
-
-.role {
-    font-size: 0.95rem;
-    color: var(--text-light);
-    margin-bottom: 0.5rem;
-    font-style: italic;
-}
-
-.description {
-    font-size: 0.95rem;
-    color: var(--text);
-}
-
-.description a {
-    color: var(--text);
-    text-decoration: underline;
-    text-underline-offset: 2px;
-}
-
-/* Writing List */
-.writing-list {
+/* Writing section */
+.writing ul {
     list-style: none;
+    padding-left: 0;
 }
 
-.writing-list li {
-    display: flex;
-    gap: 2rem;
-    margin-bottom: 1rem;
-    align-items: baseline;
+.writing ul li {
+    margin-bottom: 12px;
+    display: block;
 }
 
-.writing-list .date {
-    min-width: 100px;
-}
-
-.writing-list a {
-    color: var(--text);
-    text-decoration: none;
-}
-
-.writing-list a:hover {
+.writing a {
+    color: #000;
     text-decoration: underline;
+}
+
+.writing a:hover {
+    text-decoration: none;
 }
 
 /* Footer */
 footer {
-    margin-top: 6rem;
-    padding-top: 2rem;
+    margin-top: 60px;
+    padding-top: 30px;
     border-top: 1px solid #eee;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.85rem;
-    color: var(--text-light);
 }
 
-.social-links {
-    display: flex;
-    gap: 1.5rem;
+footer p {
+    color: #666;
+    font-size: 15px;
 }
 
-.social-links a {
-    color: var(--text-light);
-    text-decoration: none;
+footer a {
+    color: #666;
 }
 
-.social-links a:hover {
-    color: var(--text);
+footer a:hover {
+    color: #000;
 }
 
+/* Responsive design */
 @media (max-width: 600px) {
-    h1 { font-size: 2rem; }
-    .job-header, .project-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.25rem;
+    .container {
+        padding: 30px 20px;
     }
-    .company-info {
-        width: 100%;
-        justify-content: flex-start;
+
+    h1 {
+        font-size: 1.4rem;
     }
-    .writing-list li {
+
+    h2 {
+        font-size: 0.95rem;
+        margin: 40px 0 15px 0;
+    }
+
+    nav {
+        gap: 25px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .intro {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 20px 15px;
+    }
+
+    nav {
         flex-direction: column;
-        gap: 0.25rem;
+        gap: 15px;
     }
 }
